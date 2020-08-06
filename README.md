@@ -1,2 +1,2 @@
 # jianshu
-jianshu front-end implemented by React
+jianshu front-end implemented by React.js
