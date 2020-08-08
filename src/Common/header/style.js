@@ -50,13 +50,16 @@ export const SearchWrapper = styled.div`
   float: left;
   position: relative;
   .iconfont{
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    width: 30px;
-    line-height: 30px;
-    border-radius: 50%;
-    text-align: center;
+
+    &.zoom{
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      width: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      text-align: center;
+    }
     /* background-color: green; */
 
     &.focused{
@@ -66,16 +69,10 @@ export const SearchWrapper = styled.div`
   }
 `;
 
-export const SearchInfo = styled.div`
-  position: absolute;
-  left:0;
-  top: 56px;
-  height: 56px;
-`
-
 export const NavSearch = styled.input.attrs({
   placeholder: '搜索',
 })`
+
   width: 160px;
   height: 38px;
   border: none;
@@ -106,9 +103,60 @@ export const NavSearch = styled.input.attrs({
 
   /* transition: width 1s; */
   &.focused {
-    width: 200px;
+    width: 240px;
   }
 `;
+
+
+export const SearchInfo = styled.div`
+  position: absolute;
+  left:20px;
+  top: 58px;
+  width: 200px;
+  padding: 0 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+`;
+
+
+export const SearchInfoTitle = styled.div`
+  margin-top: 20px;
+  margin-bottom: 15px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #969696;
+`;
+
+export const SearchInfoSwitch = styled.span`
+  float: right;
+  font-size: 12px;
+  cursor: pointer;
+
+  .spin{
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 2px;
+    transition: all .5s ease-in;
+    transform-origin: center center;
+  }
+`
+
+export const SearchInfoList = styled.div`
+  overflow: hidden;
+`
+
+export const SearchInfoItem = styled.a`
+  display: block;
+  float: left;
+  line-height: 20px;
+  padding: 0 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  color: #333;
+  border-radius: 2px;
+`;
+
 
 export const Addition = styled.div`
   position: absolute;
