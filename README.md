@@ -70,4 +70,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 =======
 # jianshu
 jianshu front-end implemented by React.js
->>>>>>> afc248dd67710d44c004fceccdd749cb04e6d948
+
