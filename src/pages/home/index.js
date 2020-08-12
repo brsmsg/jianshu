@@ -21,7 +21,6 @@ class Home extends PureComponent {
   }
 
   render() {
-
     return (
       <HomeWrapper>
         <HomeLeft>
